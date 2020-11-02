@@ -53,25 +53,3 @@ public:
         return minimo;
     }
 };
-
-int main()
-{
-    PilhaMin<char> pilhaMin; 
-    
-    pilhaMin.cria();
-
-    pilhaMin.empilha('g');
-    pilhaMin.empilha('z');
-    pilhaMin.empilha('t');
-    pilhaMin.empilha('d');
-    pilhaMin.empilha('u');
-    
-    printf("%c\n", pilhaMin.obterMinimo());
-
-    while (!pilhaMin.vazio()) {
-        printf("%c\n", pilhaMin.topo());
-        pilhaMin.desempilha();
-    }
-
-    return 0;
-}
